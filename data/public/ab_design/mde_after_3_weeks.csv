@@ -1,0 +1,9 @@
+metric,traffic,n_per_arm_3w,mde_3w
+Engaged-visitor rate (2+ views),real,111661,0.02049512378094524
+Engaged-visitor rate (2+ views),sim,1000000,0.0069984996249062275
+Views per visitor,real,111661,0.023494373593398354
+Views per visitor,sim,1000000,0.007998249562390598
+Add-to-cart rate,real,111661,0.07448162040510128
+Add-to-cart rate,sim,1000000,0.024494123530882726
+Purchase conversion,real,111661,0.1369659914978745
+Purchase conversion,sim,1000000,0.04498899724931234

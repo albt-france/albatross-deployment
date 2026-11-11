@@ -1,0 +1,19 @@
+{
+  "mau": 3000000,
+  "annual_gmv": 250000000,
+  "share_gmv_homepage": 0.5,
+  "take_rate": 0.12,
+  "predictions_per_month": 12333600.0,
+  "platform_fee_month": 20000,
+  "usage_fee_month": 6166.8,
+  "monthly_cost": 26166.8,
+  "annual_cost": 314001.6,
+  "break_even_lift": 0.020933439999999998,
+  "one_off": 20000,
+  "engagement_week3_lift": 0.1535341520252329,
+  "rpv_lift": 0.006328501882730819,
+  "rpv_ci": [
+    -0.036550461793738234,
+    0.04920746555919987
+  ]
+}

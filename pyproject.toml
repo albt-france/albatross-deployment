@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "adequacy"
+version = "0.1.0"
+description = "Data intake checks and readiness score for event-triplet data drops"
+requires-python = ">=3.10"
+dependencies = ["duckdb", "pandas"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["adequacy*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

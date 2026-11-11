@@ -1,0 +1,6 @@
+step,rows_after,removed,share_removed
+raw events,2756101,0,0.0
+invalid rows,2756101,0,0.0
+exact duplicates,2755641,460,0.00016690244660845158
+repeats < 1 s,2750936,4705,0.0017071217636799231
+bot users (rules 1-2),2657575,93361,0.03387430286480793

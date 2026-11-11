@@ -1,0 +1,8 @@
+fact,value
+split_date,2015-08-21
+test_transitions,105753
+test_sessions,45722
+items_interacted_in_test,106470
+share_prev_item_without_covis_neighbour,0.127
+share_targets_new_item,0.0713
+covis_pairs_kept,896852

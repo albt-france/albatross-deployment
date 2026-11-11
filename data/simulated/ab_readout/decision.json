@@ -1,0 +1,37 @@
+{
+  "decision": "GO TO PRODUCTION",
+  "rules": {
+    "SRM resolved (p >= 0.001 after documented exclusion)": true,
+    "Primary metric up, p < 0.05": true,
+    "Guardrails within margin": true,
+    "Conversion not harmed (CI low > -2 %)": true
+  },
+  "srm_bad_days": [
+    9
+  ],
+  "primary_rel_lift": 0.20239589320319618,
+  "primary_ci": [
+    0.1950122064118182,
+    0.20977957999457414
+  ],
+  "week3_lift": 0.1535341520252329,
+  "week1_lift": 0.2908369930107291,
+  "conversion_rel_lift": 0.033411750606125556,
+  "conversion_ci": [
+    0.0011843901366128187,
+    0.0656391110756383
+  ],
+  "conversion_p": 0.03885444031445373,
+  "rpv_rel_lift": 0.006328501882730819,
+  "rpv_ci": [
+    -0.036550461793738234,
+    0.04920746555919987
+  ],
+  "rpv_boot_ci": [
+    -0.0339262043737162,
+    0.04865247330608097
+  ],
+  "rpv_p": 0.771673124188353,
+  "aov_rel_diff": -0.026207606704210074,
+  "aov_p": 0.07299800613437246
+}

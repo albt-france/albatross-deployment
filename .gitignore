@@ -1,0 +1,20 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+.env
+*.duckdb
+*.duckdb.wal
+.DS_Store
+DECISIONS.md
+notes/
+
+# Raw data: dataset licence (CC BY-NC-SA 4.0) and site terms -> not redistributed
+data/raw/retailrocket/
+data/raw/rees46/
+data/raw/albatross_site/
+# Local working tables built from the raw dataset (only aggregates are published)
+data/work/
+*.egg-info/
+reports/

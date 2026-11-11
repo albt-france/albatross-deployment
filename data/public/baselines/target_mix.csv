@@ -1,0 +1,4 @@
+target_segment,share
+cold item (1-4),0.10134937070343158
+new item (0 in train),0.07130766975877753
+warm item (5+),0.8273429595377909

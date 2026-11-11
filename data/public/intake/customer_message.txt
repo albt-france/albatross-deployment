@@ -1,0 +1,14 @@
+Hi both,
+
+Thanks for the data drop. We validated 2,657,575 events from 1,407,445 users over 139 days.
+Our readiness verdict is GO WITH CONDITIONS (score 73/100).
+We can start training now. In parallel, could you help us with the points below before the A/B test starts (week 5)?
+- Median events per day (19,836): Add more surfaces or event types (clicks on all pages, not only the homepage).
+- Users with 2+ events (29%): Send a stable user id (logged-in id or long-lived cookie) so visits link together.
+- Sessions with 2+ events (21%): Check that every page view / click is tracked, not only the first one.
+- Events on items missing from catalog (9.3%): Send a full catalog export, including sold and delisted items.
+- Catalog items with < 5 interactions (81%): Make sure every listing has a title, category and image URL: content is what makes the long tail and brand-new items recommendable.
+
+The full intake report is attached. Shall we review it in Thursday's check-in?
+
+Best,

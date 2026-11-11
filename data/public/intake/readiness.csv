@@ -1,0 +1,10 @@
+criterion,value,raw_value,threshold,grade,critical,why_it_matters,condition
+History length (days),139,139.0,pass >= 56; fail < 28,PASS,True,Enough weeks to train on the past and validate on a later hold-out.,
+Median events per day,"19,836",19836.0,"pass >= 50,000; fail < 5,000",CONDITION,False,Volume drives how fast the model learns new items and how fast an A/B test reads.,"Add more surfaces or event types (clicks on all pages, not only the homepage)."
+Users with 2+ events,29%,0.28763539605455274,pass >= 40%; fail < 20%,CONDITION,False,A sequence model learns from what users do next; single-event users teach it little.,Send a stable user id (logged-in id or long-lived cookie) so visits link together.
+Sessions with 2+ events,21%,0.21473251876948898,pass >= 40%; fail < 20%,CONDITION,True,In-session intent is the core signal; it needs sessions with several events.,"Check that every page view / click is tracked, not only the first one."
+Events on items missing from catalog,9.3%,0.09273426481830672,pass <= 1.0%; fail >= 10.0%,CONDITION,True,Items without catalog data cannot get content embeddings nor be served.,"Send a full catalog export, including sold and delisted items."
+Catalog items with a category,100%,1.0,pass >= 95%; fail < 70%,PASS,False,"Content (category, text, images) is what makes new items recommendable before their first click.",
+"Events beyond views (cart, purchase)",2.9%,0.029072744889608006,pass >= 1.0%; fail < 0.2%,PASS,False,"Purchase-type signals let us optimise and measure revenue, not only clicks.",
+Catalog items with < 5 interactions,81%,0.8129110688569559,pass <= 50%; above: condition,CONDITION,False,A large cold catalog is normal in marketplaces; it makes content-based cold start essential.,"Make sure every listing has a title, category and image URL: content is what makes the long tail and brand-new items recommendable."
+Blocking intake checks,0,0.0,"pass = 0, else fail",PASS,True,A blocking data-quality issue would bias training and the A/B readout.,

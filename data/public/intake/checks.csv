@@ -1,0 +1,18 @@
+check,label,affected,base,rate,detail,status,recommendation
+schema_columns,Required columns present,0,1,0.0,"user_id, event_type, item_id, timestamp + catalog.item_id",OK,
+schema_timezone,Timestamp type and time zone,0,1,0.0,column type BIGINT; Unix time in ms: UTC by definition,OK,
+schema_timestamp_parse,Timestamps that cannot be parsed,0,2756101,0.0,,OK,
+check_null_fields,"Rows missing user, item, type or timestamp",0,2756101,0.0,,OK,
+check_timestamp_range,Timestamps outside 2000-01-01 .. now,0,2756101,0.0,range 2015-05-03 03:00:04.384 -> 2015-09-18 02:59:47.788 (UTC),OK,
+check_event_types,Event types outside the agreed list,0,2756101,0.0,"view=2664312, addtocart=69332, transaction=22457",OK,
+check_unknown_items,Events on items missing from the catalog,255585,2756101,0.09273426481830672,49815 distinct item ids missing from the catalog,WARNING,Ask for a full catalog export (including sold / delisted items).
+check_items_without_events,Catalog items with no event in the period,231807,417053,0.5558214423586451,,WARNING,Expected in a marketplace: these items depend on content embeddings (cold start).
+check_catalog_duplicate_ids,Duplicate item ids in the catalog,0,417053,0.0,,OK,
+check_exact_duplicates,Exact duplicate events,460,2756101,0.00016690244660845158,,OK,
+check_near_duplicates,Same event repeated within 1 second,4705,2756101,0.0017071217636799231,,OK,
+check_missing_days,Days with no event at all,0,139,0.0,,OK,
+check_volume_drops,Days below 50 % of the previous 7-day median,2,139,0.014388489208633094,"2015-09-17 (10128 vs median 20427), 2015-09-18 (1528 vs median 16859)",WARNING,"Check each date with the customer (outage, partial export, holiday)."
+check_heavy_users,Events from users with >100 events in one day (bot rule 1),93012,2756101,0.03374767470422891,129 users flagged,WARNING,Exclude these users from training and from A/B metrics.
+check_bursts,Events from users with >=20 events in one minute (bot rule 2),3640,2756101,0.0013207063166407907,14 users flagged,OK,
+check_purchase_without_view,Purchases with no earlier view of the item,2633,22457,0.11724629291534934,,WARNING,"Some is normal (other device, e-mail link); a high share means views are missing."
+check_cart_without_view,Add-to-carts with no earlier view of the item,19188,69332,0.27675532221773497,,WARNING,Same as above: check whether every surface sends view events.

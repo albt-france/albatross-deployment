@@ -1,0 +1,28 @@
+dimension,segment,baseline,recall@20,ndcg@20,n_targets
+target,cold item (1-4),(a) Global popularity,0.0,0.0,10718
+target,cold item (1-4),(b) Recent popularity (7 days),0.0005598059339428998,0.00014869831185335974,10718
+target,cold item (1-4),(c) Co-visitation + popularity fill,0.06671020712819556,0.03422445552975629,10718
+target,new item (0 in train),(a) Global popularity,0.0,0.0,7541
+target,new item (0 in train),(b) Recent popularity (7 days),0.005967378331786235,0.0022611047384126165,7541
+target,new item (0 in train),(c) Co-visitation + popularity fill,0.001193475666357247,0.0004325141543973316,7541
+target,warm item (5+),(a) Global popularity,0.009052049283379432,0.003054379615311801,87494
+target,warm item (5+),(b) Recent popularity (7 days),0.018172674697693555,0.006638919175205325,87494
+target,warm item (5+),(c) Co-visitation + popularity fill,0.3613847806706746,0.20032714850431166,87494
+context,1 item seen,(a) Global popularity,0.008267354883863348,0.002546742566870967,45722
+context,1 item seen,(b) Recent popularity (7 days),0.017453304754822624,0.006166457257829253,45722
+context,1 item seen,(c) Co-visitation + popularity fill,0.33480600148724904,0.19626424418513264,45722
+context,2+ items seen,(a) Global popularity,0.006896436840965501,0.002511997574913234,60031
+context,2+ items seen,(b) Recent popularity (7 days),0.014042744581965983,0.005290059717675191,60031
+context,2+ items seen,(c) Co-visitation + popularity fill,0.2837700521397278,0.14865501261364708,60031
+user,new user,(a) Global popularity,0.007815088605280898,0.0026118153561744597,87523
+user,new user,(b) Recent popularity (7 days),0.01579013516447105,0.0057179527626048336,87523
+user,new user,(c) Co-visitation + popularity fill,0.3144430606811924,0.17449979186871062,87523
+user,returning user,(a) Global popularity,0.0059243006034009876,0.002119910841669415,18230
+user,returning user,(b) Recent popularity (7 days),0.014207350521119034,0.005433787932680505,18230
+user,returning user,(c) Co-visitation + popularity fill,0.26450905101481076,0.14398011799875607,18230
+prev,current item has co-visitation,(a) Global popularity,0.008416286652007669,0.002845177422955677,92321
+prev,current item has co-visitation,(b) Recent popularity (7 days),0.016583442553698508,0.006075628848968617,92321
+prev,current item has co-visitation,(c) Co-visitation + popularity fill,0.3491404989114069,0.1934435354053128,92321
+prev,current item has no co-visitation,(a) Global popularity,0.0011167361524717094,0.00034025202482129203,13432
+prev,current item has no co-visitation,(b) Recent popularity (7 days),0.008189398451459202,0.0028738983538264392,13432
+prev,current item has no co-visitation,(c) Co-visitation + popularity fill,0.008189398451459202,0.0028738983538264392,13432

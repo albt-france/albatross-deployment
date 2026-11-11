@@ -1,0 +1,15 @@
+pandas
+numpy
+scipy
+duckdb
+pyarrow
+matplotlib
+plotly
+jinja2
+pytest
+requests
+nbformat
+nbconvert
+ipykernel
+pypdf
+pypdfium2

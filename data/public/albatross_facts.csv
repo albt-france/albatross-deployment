@@ -1,0 +1,41 @@
+fact_id,topic,fact,value,unit,source_url,collected_on,note
+F01,scale,Requests per month in production,3,billion+,https://usealbatross.ai/,2026-11-11,"""3+ billion"""
+F02,scale,Users per month,50,million+,https://usealbatross.ai/,2026-11-11,"""50+ million"""
+F03,scale,Products orchestrated,150,million+,https://usealbatross.ai/,2026-11-11,"""150+ million"""
+F04,scale,Countries with live marketplaces,12,countries,https://usealbatross.ai/,2026-11-11,
+F05,company,Founded,2024-08,date,https://usealbatross.ai/company,2026-11-11,
+F06,company,Seed capital raised (total),16,USD million,https://usealbatross.ai/company,2026-11-11,"Investors: MMC Ventures, Redalpine, Daphni"
+F07,company,Latest round (Nov 2025),12.5,USD million,https://finance.yahoo.com/news/albatross-raises-12-5-million-133500967.html,2026-11-11,Led by MMC Ventures with Redalpine and Daphni
+F08,company,Award,Tech for Retail 2025 innovation award,text,https://usealbatross.ai/company,2026-11-11,
+F09,company,Headquarters / main office,Baar / Zurich (Switzerland),text,https://usealbatross.ai/company,2026-11-11,Remote-first
+F10,technology,Model family,Sequential embedding (transformer) perception models on live user-event sequences,text,https://usealbatross.ai/technology,2026-11-11,"Catalog layer, user layer, serving layer"
+F11,technology,APIs,"Catalog API, Event API, Prediction API",text,https://usealbatross.ai/,2026-11-11,
+F12,technology,New-item freshness,New listings recommendable within minutes,text,https://usealbatross.ai/technology,2026-11-11,Before their first click
+F13,primitives,Primitives,"Discovery Feed (user_id,k); Similar Items (item_id,k); Playlist (item_ids,k); Contextual Search (query,user_id,k)",text,https://usealbatross.ai/primitives,2026-11-11,Each returns the best k items
+F14,evaluation,Weeks 1-2,Data integration: customer wires up catalog and event data,text,https://usealbatross.ai/evaluation,2026-11-11,Every API live from day one
+F15,evaluation,Weeks 3-4,Model training on the customer's users and catalog,text,https://usealbatross.ai/evaluation,2026-11-11,
+F16,evaluation,Weeks 5-7,Integration and live A/B: Discovery Feed on the homepage vs incumbent,text,https://usealbatross.ai/evaluation,2026-11-11,
+F17,evaluation,Customer team,One engineering lead + one PM,people,https://usealbatross.ai/evaluation,2026-11-11,
+F18,evaluation,Data required,"Event triplets (user ID, event type, item ID, timestamp) + catalog access; clicks only is enough to start",text,https://usealbatross.ai/evaluation,2026-11-11,
+F19,evaluation,Commitment,"Fixed 3-month evaluation, ends automatically, no auto-renewal; production is a separate agreement",text,https://usealbatross.ai/evaluation,2026-11-11,
+F20,evaluation,Goal,Incremental revenue that materially exceeds platform cost,text,https://usealbatross.ai/evaluation,2026-11-11,Fixed evaluation fee (amount not public)
+F21,pricing,Platform fee SME (<1M MAU),10000,EUR per month,https://usealbatross.ai/pricing,2026-11-11,
+F22,pricing,Platform fee GROWTH (1-5M MAU),20000,EUR per month,https://usealbatross.ai/pricing,2026-11-11,
+F23,pricing,Platform fee SCALE (5-10M MAU),30000,EUR per month,https://usealbatross.ai/pricing,2026-11-11,
+F24,pricing,Platform fee ENTERPRISE (10M+ MAU),40000,EUR per month,https://usealbatross.ai/pricing,2026-11-11,
+F25,pricing,Usage first 100M predictions/month,0.50,EUR per 1k,https://usealbatross.ai/pricing,2026-11-11,Marginal tier
+F26,pricing,Usage 100M-200M predictions/month,0.25,EUR per 1k,https://usealbatross.ai/pricing,2026-11-11,Marginal tier
+F27,pricing,Usage 200M+ predictions/month,0.10,EUR per 1k,https://usealbatross.ai/pricing,2026-11-11,Marginal tier
+F28,pricing,Each additional primitive,10,% of platform fee,https://usealbatross.ai/pricing,2026-11-11,
+F29,customers,Wallapop homepage engagement,119,% lift,https://usealbatross.ai/customers,2026-11-11,+118.9% on the Wallapop case study page (Discovery Feed)
+F30,customers,Wallapop sold items overall,11,% lift,https://usealbatross.ai/customers,2026-11-11,Purchase-optimised feed funnel analysis vs previous feed
+F31,customers,Wallapop purchase intent (home feed),46.9,% lift,https://usealbatross.ai/customers/wallapop,2026-11-11,
+F32,customers,Wallapop similar items: conversion to sold item,49.9,% lift,https://usealbatross.ai/customers/wallapop,2026-11-11,
+F33,customers,Wallapop similar items: catalog coverage,50 -> 94,%,https://usealbatross.ai/customers/wallapop,2026-11-11,In-house solution covered under half the catalog
+F34,customers,Wallapop scale,"EUR 2bn+ GMV; ~60M live items; 100,000s new listings/day; ~1bn requests/month",text,https://usealbatross.ai/customers/wallapop,2026-11-11,"Spain, Italy, Portugal; 5 surfaces (4 live) June 2025 - May 2026"
+F35,customers,OfferUp homepage engagement,84,% lift,https://usealbatross.ai/customers,2026-11-11,Discovery Feed on homepage A/B-tested vs incumbent
+F36,customers,OfferUp purchase intent,15,% lift,https://usealbatross.ai/customers,2026-11-11,
+F37,research,SwapRec,Cold items warmed up with training-time swaps (RecSys 2026),text,https://arxiv.org/pdf/2609.00913v1,2026-11-11,
+F38,research,DenseRec,Brand-new items recommendable within minutes,text,https://arxiv.org/pdf/2508.18442,2026-11-11,
+F39,research,Content embeddings for cold-start,Sequential recommenders enriched with content embeddings,text,https://ceur-ws.org/Vol-4188/paper6.pdf,2026-11-11,
+F40,research,Multinomial Blending,Promotion without engagement damage,text,https://arxiv.org/pdf/2408.09168,2026-11-11,
