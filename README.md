@@ -2,7 +2,7 @@
 
 From first data drop to a go/no-go readiness score, a deployment-health dashboard and an A/B readout a customer can trust.
 
-**[Report (PDF, 11 pages)](docs/Albatross_DeploymentCaseStudy.pdf)** · **[Interactive dashboard: deployment health & A/B results](docs/dashboard.html)** (single HTML file, opens offline) · **[Customer playbook](playbook/)**
+**[Report (PDF, 11 pages)](docs/Albatross_DeploymentCaseStudy.pdf)** · **[Interactive dashboard: deployment health & A/B results](https://albt-france.github.io/albatross-deployment/dashboard.html)** (also in [docs/dashboard.html](docs/dashboard.html), a single file that opens offline) · **[Customer playbook](playbook/)**
 
 Independent case study based on public data · not affiliated with or endorsed by Albatross AI.
 
